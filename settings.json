@@ -1,0 +1,178 @@
+{
+	// Workbench Settings
+	"workbench.statusBar.visible": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "Default Dark Modern",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.settings.editor": "json",
+
+	// Git Settings
+	"git.autorefresh": true,
+
+	// Editor Settings
+	"editor.cursorSurroundingLines": 20,
+	"editor.minimap.enabled": false,
+	"editor.lineNumbers": "relative",
+	"editor.cursorStyle": "line",
+	"editor.cursorBlinking": "phase",
+
+	// Vim Key Bindings
+	"vim.leader": "space",
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.color": "#a9dc7660",
+	"vim.highlightedyank.duration": 250,
+	"vim.useSystemClipboard": true,
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["<S-h>"],
+			"commands": [":bprevious"]
+		},
+		{
+			"before": ["<S-l>"],
+			"commands": [":bnext"]
+		},
+		{
+			"before": ["<S-q>"],
+			"after": ["<C-w>", "q"]
+		},
+		{
+			"before": ["leader", "v"],
+			"commands": [":vsplit"]
+		},
+		{
+			"before": ["leader", "s"],
+			"commands": [":split"]
+		},
+		{
+			"before": ["leader", "h"],
+			"commands": ["workbench.action.focusLeftGroup"]
+		},
+		{
+			"before": ["leader", "j"],
+			"commands": ["workbench.action.focusBelowGroup"]
+		},
+		{
+			"before": ["leader", "k"],
+			"commands": ["workbench.action.focusAboveGroup"]
+		},
+		{
+			"before": ["leader", "l"],
+			"commands": ["workbench.action.focusRightGroup"]
+		},
+		{
+			"before": ["leader", "w"],
+			"commands": [":w!"]
+		},
+		{
+			"before": ["leader", "q"],
+			"commands": [":q!"]
+		},
+		{
+			"before": ["leader", "x"],
+			"commands": [":x!"]
+		},
+		{
+			"before": ["<leader>", "c", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["leader", "f"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["leader", "p"],
+			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["g", "p", "d"],
+			"commands": ["editor.action.peekDefinition"]
+		},
+		{
+			"before": ["g", "h"],
+			"commands": ["editor.action.showDefinitionPreviewHover"]
+		},
+		{
+			"before": ["g", "i"],
+			"commands": ["editor.action.goToImplementation"]
+		},
+		{
+			"before": ["g", "p", "i"],
+			"commands": ["editor.action.peekImplementation"]
+		},
+		{
+			"before": ["g", "r"],
+			"commands": ["editor.action.referenceSearch.trigger"]
+		},
+		{
+			"before": ["g", "p", "t"],
+			"commands": ["editor.action.peekTypeDefinition"]
+		},
+		{
+			"key": "h",
+			"command": "editor.action.scrollLeftHover",
+			"when": "editorHoverFocused"
+		},
+		{
+			"key": "j",
+			"command": "editor.action.scrollDownHover",
+			"when": "editorHoverFocused"
+		},
+		{
+			"key": "k",
+			"command": "editor.action.scrollUpHover",
+			"when": "editorHoverFocused"
+		},
+		{
+			"key": "l",
+			"command": "editor.action.scrollRightHover",
+			"when": "editorHoverFocused"
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
+		},
+		{
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
+		},
+		{
+			"before": ["J"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["K"],
+			"commands": ["editor.action.moveLinesUpAction"]
+		},
+		{
+			"before": ["leader", "c"],
+			"commands": ["editor.action.commentLine"]
+		}
+	],
+
+	// Language Specific Settings
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8",
+		"editor.formatOnSave": false
+	},
+	// settings.json
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+
+	// Settings appalled only when working with TypeScript
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"prettier.enable": true,
+
+	// Prettier configuration
+	"prettier.useTabs": true,
+	"makefile.configureOnOpen": false,
+	"git.openRepositoryInParentFolders": "always",
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
+	}
+}
